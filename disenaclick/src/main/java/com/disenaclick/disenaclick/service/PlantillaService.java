@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 import com.disenaclick.disenaclick.model.Plantilla;
 import com.disenaclick.disenaclick.repository.PlantillaRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
+@Transactional
 public class PlantillaService {
 
     @Autowired

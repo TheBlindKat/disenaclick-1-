@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 import com.disenaclick.disenaclick.model.SeccionPagina;
 import com.disenaclick.disenaclick.repository.SeccionPaginaRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
+@Transactional
 public class SeccionPaginaService {
 
     @Autowired

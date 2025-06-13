@@ -9,7 +9,10 @@ import org.springframework.stereotype.Service;
 import com.disenaclick.disenaclick.model.Rol;
 import com.disenaclick.disenaclick.repository.RolRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
+@Transactional
 public class RolService {
 
     @Autowired
